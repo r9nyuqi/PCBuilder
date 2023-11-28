@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "script.js" defer></script>
-    <link href = "styles.css" rel = "stylesheet" >
-    <title>Tabs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>Tabs</title>
 </head>
 <body>
-    <ul> 
-        <li data-tab-target = "#home">Home</li>
-        <li data-tab-target = "#About">About</li>
-    </ul>
+  <ul class="tabs">
+    <li data-tab-target="#home" class="active tab">Home</li>
+    <li data-tab-target="#Info" class="tab">Info</li>
+    <li data-tab-target="#user" class="tab">User</li>
+  </ul>
 
-    <div class = "tab-content">
-        <div id = "home" data-tab-content>
-            <h1>Home</h1>
-            <p>This is PC builder</p>
-        </div>
-        <div id = "About" data-tab-content>
-            <h1>About</h1>
-            <p>This is about PC builder</p>
-        </div>
-        
+  <div class="tab-content">
+    <div id="home" data-tab-content class="active">
+      <h1>Home</h1>
+      <p>This is PC Builder</p>
     </div>
+    <div id="Info" data-tab-content>
+      <h1>Info</h1>
+      <p>Some information about pc parts</p>
+    </div>
+    <div id="user" data-tab-content>
+      <h1>User</h1>
+      <p>Store your informations</p>
+
+      <form action = "results.html" method = "GET">
+        <div>
+            <label> Name </label>
+            <input>
+        </div>  
+        <div>
+          <Label> Password</Label>
+          <input>
+          <button> Submit </button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
 </body>
 </html>
