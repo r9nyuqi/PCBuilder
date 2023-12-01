@@ -30,14 +30,20 @@
 
       <form action = "results.html" method = "GET">
         <div>
-            <label> Name </label>
-            <input>
+            <label for="name"> Name </label>
+            <input type = "text" name = "name" id = "name" placeholder = "username" required>
         </div>  
         <div>
-          <Label> Password</Label>
-          <input>
-          <button> Submit </button>
+            <label for = "email"> Email</label>
+            <input type = "email" name = "email" id = "email" placeholder = "XXX@XXX.XXX" required>
         </div>
+        <div>
+          <label for = "password"> Password</Label>
+          <input type = "password" name = "password" id = "password" placeholder = "password" required>
+
+        </div>
+        <button type = "submit"> Submit </button>
+        <button type = "reset"> Reset </button>
       </form>
       
     </div>
