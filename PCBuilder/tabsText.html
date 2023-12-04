@@ -26,27 +26,27 @@
       <p>Some information about pc parts</p>
     </div>
     <div id="user" data-tab-content>
-      <h1>User</h1>
-      <p>Store your informations</p>
+
 
       <div class = "full-screen-container">
         <div class = "login-container">
-          <form action = "results.html" method = "GET">
-            <div>
+          <h1 class = "login-title"> Login </h1>
+          
+          <form class = "form" action = "results.html" method = "GET">
+            <div class = "input-group">
                 <label for="name"> Name </label>
                 <input type = "text" name = "name" id = "name" placeholder = "username" required>
-            </div>  
-            <div>
-                <label for = "email"> Email</label>
-                <input type = "email" name = "email" id = "email" placeholder = "XXX@XXX.XXX" required>
             </div>
-            <div>
+            <div class = "input-group">
+              <label for = "email"> Email</label>
+              <input type = "text" name = "name" id = "name" placeholder = "username" required>
+            </div>
+            <div class = "input-group">
               <label for = "password"> Password</Label>
-              <input type = "password" name = "password" id = "password" placeholder = "password" required>
-    
+                <input type = "password" name = "password" id = "password" placeholder = "password" required>  
             </div>
-            <button type = "submit"> Submit </button>
-            <button type = "reset"> Reset </button>
+            <button type = "submit" class = "login-button"> Login </button>
+            <button type = "button" class = "login-button"> Sign Up For Account </button>
           </form>
         </div>
       </div> 
