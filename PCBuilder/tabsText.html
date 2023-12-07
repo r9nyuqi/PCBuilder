@@ -4,22 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="script.js" defer></script>
-  <link href="tabs.css" rel="stylesheet">
+  <script src="tabs.js" defer></script>
+  
   <link href="loginStyles.css" rel="stylesheet">
+  <link href="tabs.css" rel="stylesheet">
+  
   <title>Tabs</title>
+  
 </head>
-<body>
-  <ul class="tabs">
-    <li data-tab-target="#home" class="active tab">Home</li>
-    <li data-tab-target="#Info" class="tab">Info</li>
-    <li data-tab-target="#user" class="tab">User</li>
-  </ul>
 
+
+<body>
+  
+  <nav class = "navbar">
+  <ul class="tabs">
+      <li data-tab-target="#home" class="active tab">Home</li> 
+      <li data-tab-target="#Info" class="tab">Info</li> 
+      <li data-tab-target="#user" class="tab">User</li> 
+  </ul>
+  </nav>
+
+
+  
   <div class="tab-content">
     <div id="home" data-tab-content class="active">
-      <h1>Home</h1>
-      <p>This is PC Builder</p>
+
+     <section>
+        <h1>Home</h1>
+        <p>This is PC Builder</p>
+        <br>  <br> <br>
+        <br>  <br> <br>
+        <br>  <br> <br>
+      </section>
+
+      <section class = "home-section">
+        <h1>Info</h1>
+        <p> some info</p>
+       </section>
+       <section class = "home-section">
+        <h1>Info</h1>
+        <p> some info</p>
+       </section>
+       <section class = "home-section">
+        <h1>Info</h1>
+        <p> some info</p>
+       </section>
+       <section class = "home-section">
+        <h1>Info</h1>
+        <p> some info</p>
+       </section>
+      
+      
+      
+      
+      
     </div>
     <div id="Info" data-tab-content>
       <h1>Info</h1>
@@ -28,51 +66,25 @@
     <div id="user" data-tab-content>
 
 
-
-
       <div class = "full-screen-container">
         <div class = "login-container">
+          <h1 class = "login-title"> Login </h1>
           
-          <div class = "switch"> 
-            <div class = "login"> Login </div>
-            <div class = "signup"> SignUp </div>
-
-          </div>
-          
-          <div class = "outer">
-            <div id = "page"> 
-          <form class = "form" action = "results.html" id = "form" method = "GET">
-            <h1 class = "login-title"> Login </h1>
+          <form class = "form" action = "results.html" method = "GET">
+            <div class = "input-group">
+                <label for="name"> Name </label>
+                <input type = "text" name = "name" id = "name" placeholder = "username" required>
+            </div>
             <div class = "input-group">
               <label for = "email"> Email</label>
-              <input type = "text" name = "name" id = "email" placeholder = "username" required>
+              <input type = "email" name = "email" id = "email" placeholder = "email" required>
             </div>
             <div class = "input-group">
               <label for = "password"> Password</Label>
                 <input type = "password" name = "password" id = "password" placeholder = "password" required>  
             </div>
             <button type = "submit" class = "login-button"> Login </button>
-          </div>
-            
-            <div id = "page">
-            <h1 class = "login-title"> Sign Up </h1>
-            <div class = "input-group">
-              <label for="name"> Name </label>
-              <input type = "text" name = "name" id = "name" placeholder = "username" required>
-            </div>
-            <div class = "input-group">
-              <label for = "email"> Email</label>
-              <input type = "text" name = "name" id = "email" placeholder = "username" required>
-            </div>
-            <div class = "input-group">
-               <label for = "password"> Password</Label>
-              <input type = "password" name = "password" id = "password" placeholder = "password" required>  
-          </div>
-          
-          <button type = "submit" class = "login-button"> Sign Up </button>
-          </div>
-        </div>
-         
+            <button type = "button" class = "toggle-button"> Sign Up For Account </button>
           </form>
         </div>
       </div> 
