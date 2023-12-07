@@ -15,7 +15,34 @@ body{
     --primary-dark-hsl: 200,100%,6%;
     --primary-hsl: 200,100%,50%;
 }
+#page
+{
+    margin: auto;
+    width: 100%;
+}
 
+.outer #form
+{
+    width: 200%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+}
+.login-container
+{
+    width: 200%;
+    position: relative;
+    display:flex;
+}
+.switch
+{
+    display: flex;
+    flex-direction: column;
+    right: 30px;
+    color: white;
+    font-weight: lighter;
+}
 .login-container
 {
 
