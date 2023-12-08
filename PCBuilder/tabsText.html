@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="tabs.js" defer></script>
+  <script src="info.js" defer></script>
   
   <link href="loginStyles.css" rel="stylesheet">
   <link href="tabs.css" rel="stylesheet">
+  <link href="homeStyles.css" rel="stylesheet">
   
   <title>Tabs</title>
   
@@ -29,7 +31,7 @@
   <div class="tab-content">
     <div id="home" data-tab-content class="active">
 
-     <section>
+     <section class = "home-section" id = "section0">
         <h1>Home</h1>
         <p>This is PC Builder</p>
         <br>  <br> <br>
@@ -37,19 +39,19 @@
         <br>  <br> <br>
       </section>
 
-      <section class = "home-section">
+      <section class = "home-section" id = "section1">
         <h1>Info</h1>
         <p> some info</p>
        </section>
-       <section class = "home-section">
+       <section class = "home-section" id = "section2">
         <h1>Info</h1>
         <p> some info</p>
        </section>
-       <section class = "home-section">
+       <section class = "home-section" id = "section3">
         <h1>Info</h1>
         <p> some info</p>
        </section>
-       <section class = "home-section">
+       <section class = "home-section" id = "section4">
         <h1>Info</h1>
         <p> some info</p>
        </section>
@@ -59,10 +61,17 @@
       
       
     </div>
-    <div id="Info" data-tab-content>
+    <div class = "Video" id="Info" data-tab-content>
+      <video autoplay muted loop id="myVideo">
+        <source src="info.mp4" type="video/mp4">
+       </video>
+       <div class = "vidText">
+       <button id="myBtn" onclick="video()">Pause</button>
       <h1>Info</h1>
       <p>Some information about pc parts</p>
     </div>
+
+</div>
     <div id="user" data-tab-content>
 
 
