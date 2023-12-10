@@ -1,29 +1,98 @@
 
   
  
-.Video { position:relative; }
-.Video video {
-    position:relative;
-    z-index:0;
+.Video 
+{ 
+    margin-top:10px;
+    /* position:relative; 
+    display:flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+#myVid {
+    position:fixed;
+    z-index:1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 .vidText {
+    
+    z-index:2;
     position:absolute;
-    top:0;
-    left:0;
-    z-index:1;
+    bottom: 50%;
+    left: 50%;
+    color: black;
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280;
+  
 }
 
-/* .infoText {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  } */
+.vidText span{
+    position: relative;
+}
+
+.vidText span::before
+{
+    content: "PC";
+    color: red;
+    animation: word 20s infinite;
+}
+
+.vidText span ::after{
+
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid red;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+
+}
+@keyframes cursor {
+    to
+    {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+@keyframes word {
+    0%,20%{
+        content: "PC";
+    }
+    21%,40%{
+        content: "SETUP";
+    }
+    41%,60%{
+        content: "DREAM";
+    }
+    61%,80%{
+        content: "HOME";
+    }
+    81%,100%{
+        content: "CHAMPION";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+
   
-  /* Style the button used to pause/play the video */
-  /* #myBtn {
+  
+#myBtn {
     width: 200px;
     font-size: 18px;
     padding: 10px;
@@ -31,9 +100,13 @@
     background: #000;
     color: #fff;
     cursor: pointer;
+    position:absolute;
+    z-index: 2;
+    opacity: 0.8;
+    border-radius: 20px;
   }
   
   #myBtn:hover {
     background: #ddd;
     color: black;
-  } */
+  }
