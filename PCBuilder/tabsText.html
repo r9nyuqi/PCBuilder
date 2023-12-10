@@ -10,6 +10,7 @@
   <link href="loginStyles.css" rel="stylesheet">
   <link href="tabs.css" rel="stylesheet">
   <link href="homeStyles.css" rel="stylesheet">
+  <link href="info.css" rel="stylesheet">
   
   <title>Tabs</title>
   
@@ -62,15 +63,15 @@
       
     </div>
     <div class = "Video" id="Info" data-tab-content>
+      <div class = "vidText">
+        Build a <span> </span>  
+        <br>
+     </div>
+     <button id="myBtn" onclick="pauseVid()">Pause</button>
       <video autoplay muted loop id="myVideo">
         <source src="info.mp4" type="video/mp4">
        </video>
-       <div class = "vidText">
-       <button id="myBtn" onclick="video()">Pause</button>
-      <h1>Info</h1>
-      <p>Some information about pc parts</p>
-    </div>
-
+        
 </div>
     <div id="user" data-tab-content>
 
