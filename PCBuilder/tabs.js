@@ -13,4 +13,24 @@ tabs.forEach(tab => {
     tab.classList.add('active')
     target.classList.add('active')
   })
+
 })
+
+function signup()
+{
+  tabs.forEach(tab =>
+    {
+      const target = document.querySelector(tab.dataset.tabTarget)
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active')
+      })
+      tabs.forEach(tab => {
+        tab.classList.remove('active')
+      })
+      target.classList.add('active')
+    })
+    const singup = document.querySelector('.signup'.dataset.tabTarget)
+    signup.add('active');
+
+}
+

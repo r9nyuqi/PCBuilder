@@ -25,6 +25,9 @@
       <li data-tab-target="#Info" class="tab">Info</li> 
       <li data-tab-target="#user" class="tab">User</li> 
   </ul>
+  <ul class = "hidden-tabs">
+      <li data-tab-target = "#SignUp" class = "signup">SignUp</li>
+  </ul>
   </nav>
 
 
@@ -56,12 +59,9 @@
         <h1>Info</h1>
         <p> some info</p>
        </section>
-      
-      
-      
-      
-      
     </div>
+
+
     <div class = "Video" id="Info" data-tab-content>
       <div class = "vidText">
         Build a <span> </span>  
@@ -69,13 +69,36 @@
      </div>
      <button id="myBtn" onclick="pauseVid()">Pause</button>
       <video autoplay muted loop id="myVideo">
-        <source src="info.mp4" type="video/mp4">
+        <source src="sky.mp4" type="video/mp4">
        </video>
-        
 </div>
+
+<div class="signup" data-tab-content>
+  <div class = "full-screen-container">
+    <div class = "login-container">
+      <h1 class = "login-title"> SignUp </h1>
+      
+      <form class = "form" action = "results.html" method = "GET">
+        <div class = "input-group">
+            <label for="name"> Name </label>
+            <input type = "text" name = "name" id = "name" placeholder = "username" required>
+        </div>
+        <div class = "input-group">
+          <label for = "email"> Email</label>
+          <input type = "email" name = "email" id = "email" placeholder = "email" required>
+        </div>
+        <div class = "input-group">
+          <label for = "password"> Password</Label>
+            <input type = "password" name = "password" id = "password" placeholder = "password" required>  
+        </div>
+        <button type = "submit" class = "login-button"> SignUp </button>
+        <button type = "button" onclick = "signup()"> Sign Up For Account </button>
+      </form>
+    </div>
+  </div> 
+</div>
+
     <div id="user" data-tab-content>
-
-
       <div class = "full-screen-container">
         <div class = "login-container">
           <h1 class = "login-title"> Login </h1>
@@ -94,7 +117,7 @@
                 <input type = "password" name = "password" id = "password" placeholder = "password" required>  
             </div>
             <button type = "submit" class = "login-button"> Login </button>
-            <button type = "button" class = "toggle-button"> Sign Up For Account </button>
+            <button type = "button" onclick = "signup()"> Sign Up For Account </button>
           </form>
         </div>
       </div> 

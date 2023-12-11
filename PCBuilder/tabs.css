@@ -10,7 +10,10 @@
     padding: 0;
     margin: 0;
   }
-  
+  .hidden-tabs
+  {
+    display:none;
+  }
   .tabs {
     
     display: flex;
