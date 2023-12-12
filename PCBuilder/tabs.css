@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
   }
-  .hidden-tabs
+  #hidden
   {
     display:none;
   }
@@ -46,6 +46,7 @@
     font-weight: bold;
     height: 30px;
     z-index: 3;
+    
   }
   
   .tab-content {
