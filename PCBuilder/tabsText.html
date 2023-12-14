@@ -25,9 +25,6 @@
       <li data-tab-target="#Info" class="tab">Info</li> 
       <li data-tab-target="#user" class="tab">User</li> 
   </ul>
-  <ul class = "hidden-tabs">
-      <li data-tab-target = "#SignUp" class = "signup">SignUp</li>
-  </ul>
   </nav>
 
 
@@ -73,7 +70,7 @@
        </video>
 </div>
 
-<div class="signup" data-tab-content>
+<div id="signup" data-tab-content>
   <div class = "full-screen-container">
     <div class = "login-container">
       <h1 class = "login-title"> SignUp </h1>
@@ -92,7 +89,7 @@
             <input type = "password" name = "password" id = "password" placeholder = "password" required>  
         </div>
         <button type = "submit" class = "login-button"> SignUp </button>
-        <button type = "button" onclick = "signup()"> Sign Up For Account </button>
+        <button type = "button" class = "login-button" onclick = "signup(1)"> Login To Existing Account </button>
       </form>
     </div>
   </div> 
@@ -104,10 +101,7 @@
           <h1 class = "login-title"> Login </h1>
           
           <form class = "form" action = "results.html" method = "GET">
-            <div class = "input-group">
-                <label for="name"> Name </label>
-                <input type = "text" name = "name" id = "name" placeholder = "username" required>
-            </div>
+            
             <div class = "input-group">
               <label for = "email"> Email</label>
               <input type = "email" name = "email" id = "email" placeholder = "email" required>
@@ -117,7 +111,7 @@
                 <input type = "password" name = "password" id = "password" placeholder = "password" required>  
             </div>
             <button type = "submit" class = "login-button"> Login </button>
-            <button type = "button" onclick = "signup()"> Sign Up For Account </button>
+            <button class = "login-button" type = "button" onclick = "signup(2)" > Sign Up For Account </button>
           </form>
         </div>
       </div> 

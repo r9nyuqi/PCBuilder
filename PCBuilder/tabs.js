@@ -34,3 +34,24 @@ function signup()
 
 }
 
+
+
+
+function signup(int)
+{
+    tabs.forEach(tab => {
+      tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+      })
+  })
+
+  if(int == 1)
+  {
+    document.getElementById("user").classList.add('active')
+  }
+  else if(int == 2)
+  {
+    document.getElementById("signup").classList.add('active')
+  }
+}
+
