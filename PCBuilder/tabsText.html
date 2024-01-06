@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="tabs.js" defer></script>
   <script src="info.js" defer></script>
+  <script src="/api.js" defer></script>
   <script src="signupTest.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   
   <link href="loginStyles.css" rel="stylesheet">
   <link href="tabs.css" rel="stylesheet">
@@ -17,23 +19,35 @@
   
 </head>
 
+<header class = "header">
+  <nav class = "navbar">
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab">Home</li> 
+        <li data-tab-target="#Info" class="tab">Info</li> 
+        <li data-tab-target="#user" class="tab">User</li> 
+    </ul>
+    <div id = "userMoney">
+    <form class = "tabs" action = "results.html" method = "GET">
+      <input type ="number" min = 0 placeholder="please enter you max price" >
+      <button type = "submit" class = "algorithm">Run</button>
+    </form>
+  </div>
+    </nav>
+
+</header>
 
 <body>
   
-  <nav class = "navbar">
-  <ul class="tabs">
-      <li data-tab-target="#home" class="active tab">Home</li> 
-      <li data-tab-target="#Info" class="tab">Info</li> 
-      <li data-tab-target="#user" class="tab">User</li> 
-  </ul>
-  </nav>
+
 
 
   
   <div class="tab-content">
     <div id="home" data-tab-content class="active">
 
-     <section class = "home-section" id = "section0">
+      
+    
+     <!-- <section class = "home-section" id = "section0">
         <h1>Home</h1>
         <p>This is PC Builder</p>
         <br>  <br> <br>
@@ -56,7 +70,7 @@
        <section class = "home-section" id = "section4">
         <h1>Info</h1>
         <p> some info</p>
-       </section>
+       </section> -->
     </div>
 
 
@@ -92,6 +106,10 @@
         <button type = "submit" class = "login-button" onclick = "newAcc()" > SignUp </button>
         <button type = "button" class = "login-button" onclick = "signup(1)"> Login To Existing Account </button>
       </form>
+
+      <video autoplay muted loop id="myVideo">
+      <source src="dark.mp4" type="video/mp4">
+      </video>
     </div>
   </div> 
 </div>
@@ -114,6 +132,10 @@
             <button type = "submit" class = "login-button"> Login </button>
             <button class = "login-button" type = "button" onclick = "signup(2)" > Sign Up For Account </button>
           </form>
+
+          <video autoplay muted loop id="myVideo">
+          <source src="dark.mp4" type="video/mp4">
+          </video>
         </div>
       </div> 
       
