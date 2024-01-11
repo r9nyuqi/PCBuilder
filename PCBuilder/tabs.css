@@ -26,6 +26,10 @@
     width:100%;
     background: white;
   }
+  .tab-content
+  {
+    padding-top:35px;
+  }
   
   .tab {
     cursor: pointer;
@@ -51,5 +55,11 @@
   
   .tab-content {
     margin-top: 0px;
+  }
+
+  #userMoney
+  {
+    position:absolute;
+    padding-top:44px;
   }
 

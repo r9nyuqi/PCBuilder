@@ -3,11 +3,20 @@
 
     box-sizing:border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:0;
+    margin:0;
 }
 
 body{
     margin: 0;
 }
+
+.full-screen-container video
+{
+    position:fixed;
+    z-index:-1;
+}
+
 
 :root
 {
@@ -74,7 +83,7 @@ body{
 
 .full-screen-container
 {
-    background-image: url("lake.jpg");
+    
     height: 100vh;
     width: 100vw;
     margin : 0;
