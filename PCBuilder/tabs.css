@@ -26,6 +26,12 @@
     width:100%;
     background: white;
   }
+  #userMoney
+  {
+    position:absolute;
+    padding-top:44px;
+  }
+
   .tab-content
   {
     padding-top:35px;
@@ -43,6 +49,15 @@
   .tab:hover {
     background-color: #AAA;
   }
+
+  .my-button:hover{
+    background-color: #AAA;
+
+  }
+
+  .userMoney:hover{
+    background-color: #eeeded;
+  }
   
  nav
   {
@@ -57,9 +72,4 @@
     margin-top: 0px;
   }
 
-  #userMoney
-  {
-    position:absolute;
-    padding-top:44px;
-  }
-
+  

@@ -55,3 +55,15 @@ function signup(int)
   }
 }
 
+
+function login()
+{
+  tabs.forEach(tab => {
+  tabContents.forEach(tabContent => {
+  tabContent.classList.remove('active')
+  })
+})
+
+  document.getElementById("welcome").classList.add('active')
+}
+

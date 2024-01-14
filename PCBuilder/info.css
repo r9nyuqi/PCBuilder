@@ -8,6 +8,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
+   
     
     
     /* max-width: 10vw;
@@ -18,6 +19,9 @@
     justify-content: center; */
 
 }
+body{
+    background-color: antiquewhite;
+}
 .video video {
     position:absolute;
     margin:0;
@@ -26,6 +30,89 @@
     width: 100%;
     height:100%;
     z-index: -1;
+}
+.vidText .animation
+{
+    margin-left: 15px;
+    line-height: 90px;
+    
+    height:90px;
+    overflow: hidden;
+
+}
+
+.video{
+    background: antiquewhite;
+}
+
+.animation li::after
+{
+    background-color: antiquewhite;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid red ;
+    left:0;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing
+{
+    40%,
+    60%
+    {
+        left: calc(130px);
+    }
+
+    100%
+    {
+        left:0;
+    }
+
+}
+
+.animation li
+{
+    list-style: none;
+    color: red;
+    position:relative;
+    top:0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%
+    {
+        top:-360px;
+    }
+}
+.animation li{
+    position: relative;
+}
+h1{
+    color:black;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing:6px;
+    margin-bottom:2rem;
+
+}
+h2{
+    color:grey;
+    font-size: 4rem;
+    font-weight:400;
+}
+
+.vidText p{
+    font-size : 10px;
+    font-weight:100;
+    color: white;
+    line-height: 5rem;
+    margin-bottom:10px;
+    white-space:nowrap;
+    
+
 }
 .vidText {
    
@@ -41,9 +128,25 @@
     min-width: 280;
     flex-direction: column;
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    
   
+}
+.btn
+{
+    display: inline-block;
+    padding:10px 15px;
+    color:green;
+    background: white;
+    font-size:20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(211, 208, 208);
 }
 
 #myBtn
@@ -55,7 +158,7 @@
 
 }
 
-.vidText span{
+/* .vidText span{
     position: relative;
 }
 
@@ -77,8 +180,8 @@
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 
-}
-@keyframes cursor {
+} */
+/* @keyframes cursor {
     to
     {
         border-left: 2px solid #ff7f5000;
@@ -109,7 +212,7 @@
     5%,20%,25%,40%,45%,60%,65%,80%,85%{
         width: calc(100%-8px);
     }
-}
+} */
 
 
 
