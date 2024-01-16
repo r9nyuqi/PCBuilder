@@ -39,6 +39,7 @@ body{
     height:90px;
     overflow: hidden;
 
+
 }
 
 
@@ -50,7 +51,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    border-left: 2px solid red ;
+    border-left: 2px solid #7d2ae8 ;
     left:0;
     animation: typing 3s steps(10) infinite;
 }
@@ -60,7 +61,7 @@ body{
     40%,
     60%
     {
-        left: calc(130px);
+        left: calc(180px);
     }
 
     100%
