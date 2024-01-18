@@ -11,6 +11,7 @@
   <script src="userName.js" defer></script>
   <script src="home.js" defer></script>
   <script src="profile.js" defer></script>
+  <script src="parts.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   
   <link href="loginStyles.css" rel="stylesheet">
@@ -19,6 +20,7 @@
   <link href="info.css" rel="stylesheet">
   <link href="user.css" rel="stylesheet">
   <link href="pfp.css" rel="stylesheet">
+  <link href="parts.css" rel="stylesheet">
   
   <title>Tabs</title>
   
@@ -141,11 +143,13 @@
          
           this website will help you do all of that.
         </div>
-        <a href = "#" class = "btn" >Contact Me</a>
+        <a href = "#" class = "btn" onclick = "parts()" >Explore Pc Parts</a>
+        
      </div>
-     <!-- <div class = "infoImg">
+
+    </div>
+    <div class = "infoImg">
       <img src = "services.png">
-    </div> -->
     </div>
      
      <!-- <button id="myBtn" onclick="pauseVid()">Pause</button> -->
@@ -232,6 +236,27 @@
       <div id = "userprofile" class = "profile">
 
       </div>
+  </div>
+
+  <div id = "data" data-tab-content> 
+    <div class = "pcParts">
+      <div class = "parts">
+        <h1>Pc Parts available </h1>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">Name</div>
+        <div class="grid-item">Picture</div>
+        <div class="grid-item">Price</div>
+        <div class="grid-item">Link</div>
+        <div class="grid-item">Item1</div>
+        <div class="grid-item">Name1</div>
+        <div class="grid-item">Price1</div>
+        <div class="grid-item">Link1</div>
+        
+      </div>
+
+      
+    </div>
   </div>
 
   
