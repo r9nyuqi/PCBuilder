@@ -119,6 +119,12 @@ body{
     
 
 }
+.vidText .infoImg
+{
+    display:flex;
+    position:relative;
+    padding-left: 500px;
+}
 .vidText {
    
     
