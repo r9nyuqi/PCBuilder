@@ -93,7 +93,8 @@
 html
 {
     scroll-snap-type: y mandatory;
-    scroll-padding-top: 43px ;
+    scroll-padding: -100px ;
+    scroll-snap-align: bottom;
 
   }
 
