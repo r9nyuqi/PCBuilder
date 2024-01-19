@@ -30,7 +30,7 @@
 // }
 function loadprofile()
 {
-    abs.forEach(tab => {
+    tabs.forEach(tab => {
         tabContents.forEach(tabContent => {
         tabContent.classList.remove('active')
         })

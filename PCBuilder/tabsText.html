@@ -12,6 +12,7 @@
   <script src="home.js" defer></script>
   <script src="profile.js" defer></script>
   <script src="parts.js" defer></script>
+  <script src="algorithm.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   
   <link href="loginStyles.css" rel="stylesheet">
@@ -21,6 +22,7 @@
   <link href="user.css" rel="stylesheet">
   <link href="pfp.css" rel="stylesheet">
   <link href="parts.css" rel="stylesheet">
+  <link href="algorithm.css" rel="stylesheet">
   
   <title>Tabs</title>
   
@@ -63,9 +65,9 @@
 
   
   <div class="tab-content">
+
     <!-- <div class = "splash font-bold">
       <h4 class = "fade-in">Welcome to PC Builder</h4>
-
     </div> -->
     
     <div id="home" data-tab-content class="active">
@@ -80,10 +82,20 @@
         <div class="about">
           <h2>Services</h2>
           <p>PC builder is a place where you can find your dream PC</p>
+          <a href = "#run">Get Started</a>
         </div>
         <div class = "right">
           <img src = "services.png">
         </div>
+      </section>
+      <section id = "run" class = "run">
+
+        <form class  action = "results.html" method = "GET">
+          <input class = "userMoney" id = "userMoney" type ="number" min = 0 placeholder="please enter you max price" >
+          <a href = "#" class = "money" onclick = "algoTab(); money() " >Run</a>
+          <!-- <button type = "button" class = "money-button" onclick = "algo()">Run</button> -->
+        </form>
+
       </section>
       
       
@@ -124,9 +136,9 @@
       <div class = "vidText">
         <h1>Build a </h1>
         <ul class = "animation">
-          <li><span>Champ</span></li>
-          <li><span>Dream</span></li>
           <li><span>Setup</span></li>
+          <li><span>Dream</span></li>
+          <li><span>Champ</span></li>
           <li><span>Home</span></li>
         </ul>
         <h2>Lets get started</h2>
@@ -258,6 +270,13 @@
       
     </div>
   </div>
+
+  <div id = "algorithm" data-tab-content>
+    <div class = "build">
+      <h1>Money:</h1>
+      <a class = "text-3xl" id="money1" href = "algorithm.js"></a>
+
+    </div>
 
   
     

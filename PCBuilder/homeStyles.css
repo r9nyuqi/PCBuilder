@@ -10,6 +10,21 @@
 
 }
 
+.run
+{
+    top:0;
+    left:0;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.run a{
+    display: flex;
+    padding-top:200px;
+}
+
 .start
 {
     background-image: url("moon.jpeg");
@@ -51,6 +66,8 @@
     z-index: 2;
 }
 
+
+
 .start a:hover{
   
     background: #8b46e5;
@@ -70,7 +87,24 @@
 {
     width: 50%;
 }
+.about a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    display:inline-block;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    background-color: #7d2ae8;
+    border-radius: 5px;
+    color:black;
+    z-index: 2;
+}
 
+.about a:hover{
+  
+    background: #8b46e5;
+    cursor: pointer;
+}
 .about h2{
     font-size: 40px;
 

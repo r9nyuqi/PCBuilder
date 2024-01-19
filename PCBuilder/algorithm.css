@@ -1,0 +1,11 @@
+.build
+{
+    top:0;
+    left:0;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:100px;
+}

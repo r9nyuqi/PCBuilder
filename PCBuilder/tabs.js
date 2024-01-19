@@ -67,3 +67,14 @@ function login()
   document.getElementById("welcome").classList.add('active')
 }
 
+function algoTab()
+{
+    tabs.forEach(tab => {
+        tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active')
+        })
+      })
+      
+    document.getElementById("algorithm").classList.add('active')
+}
+
