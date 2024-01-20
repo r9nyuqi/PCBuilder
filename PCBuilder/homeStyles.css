@@ -9,8 +9,73 @@
     box-sizing: border-box;;
 
 }
-
 .run
+{
+    width:100%;
+    height:100vh;
+
+}
+.moneyScreen
+{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:340px;
+    text-align: center;
+    padding-bottom:350px
+
+}
+.moneyForm
+{
+    position: relative;
+    box-sizing: border-box;
+    padding:60px 30px;
+    transition: 0.5s;
+}
+.moneyForm:hover{
+    background: rgba(220, 100, 241, 0.169);
+    box-shadow: rgba(128, 99, 118, 0.154);
+    border-radius: 30px;
+}
+.moneyForm h3
+{
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom:30px;
+}
+.moneyForm input{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    outline:none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border:none;
+}
+.moneyForm a{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    outline:none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border:none;
+    background: rgba(105, 11, 89, 0.868)
+}
+.moneyForm a:hover{
+    background: rgba(127, 13, 108, 0.868)
+}
+/* .run
 {
     top:0;
     left:0;
@@ -20,10 +85,17 @@
     align-items: center;
     flex-direction: column;
 }
+.run h3
+{
+    display:flex;
+    font-size: 50px;
+    padding-bottom:300px;
+    font-weight: bold;
+}
 .run a{
     display: flex;
     padding-top:200px;
-}
+} */
 
 .start
 {
