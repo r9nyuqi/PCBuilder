@@ -1,11 +1,35 @@
-.build
+.buildBackground
 {
+    background-image: url("anime1.webp");
+    background-size: cover;
+    width:100%;
+    min-height: 100vh;
+    position: absolute;
     top:0;
     left:0;
-    position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top:100px;
+    
+
+}
+
+.build
+{
+    background-image: url(dark.avif);
+    min-width: 300px;
+    min-height: 300px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+
+}
+
+.build h1{
+    padding-bottom: 200px;
+    font-size: 40px;
+    font-weight: bold;
 }
