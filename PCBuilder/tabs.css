@@ -1,9 +1,12 @@
+
+
 [data-tab-content] {
     display: none;
   }
   
   .active[data-tab-content] {
     display: block;
+    font-family: 'Quicksand', sans-serif;
   }
   
   body {

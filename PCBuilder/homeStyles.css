@@ -99,6 +99,8 @@
 
 .start
 {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Teko', sans-serif;
     background-image: url("moon.jpeg");
     background-size: cover;
     width:100%;
@@ -110,6 +112,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     
 
 }
