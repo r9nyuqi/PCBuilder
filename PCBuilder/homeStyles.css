@@ -6,9 +6,10 @@
 {
     margin:0px;
     padding-top:0px;
-    box-sizing: border-box;;
+    box-sizing: border-box;
 
 }
+
 .run
 {
     width:100%;
@@ -44,6 +45,7 @@
     font-size: 30px;
     font-weight: bold;
     padding-bottom:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .moneyForm input{
     display: block;
@@ -75,6 +77,9 @@
 .moneyForm a:hover{
     background: rgba(127, 13, 108, 0.868)
 }
+.about p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /* .run
 {
     top:0;
@@ -99,10 +104,10 @@
 
 .start
 {
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Teko', sans-serif;
+    
     background-image: url("moon.jpeg");
     background-size: cover;
+    margin-top:18px;
     width:100%;
     min-height: 100vh;
     position: absolute;
@@ -112,6 +117,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    
 
     
 
@@ -122,11 +129,13 @@
     color:black;
     font-weight: 400;
     z-index: 1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .start p{
     font-size: 16px;
     color:black;
     z-index: 1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .start a{
     text-decoration: none;
@@ -139,6 +148,7 @@
     border-radius: 5px;
     color:black;
     z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -173,6 +183,7 @@
     border-radius: 5px;
     color:black;
     z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .about a:hover{
@@ -182,6 +193,7 @@
 }
 .about h2{
     font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .left p
@@ -189,6 +201,7 @@
     font-size: 16px;
     color:grey;
     padding-block: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .right{
     width: 50%;
@@ -221,6 +234,7 @@ html
     color:white;
     text-align: center;
     line-height: 90vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 

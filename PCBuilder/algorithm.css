@@ -18,18 +18,27 @@
 .build
 {
     background-image: url(dark.avif);
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 500px;
+    min-height: 500px;
     color:white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    position: fixed;
 
 }
 
 .build h1{
-    padding-bottom: 200px;
+    padding-bottom: 300px;
     font-size: 40px;
     font-weight: bold;
+}
+#money1
+{
+    position: absolute;
+    margin-bottom: 100px;
+}
+.build p{
+    position: absolute;
 }
