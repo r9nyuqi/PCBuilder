@@ -38,11 +38,20 @@
 {
     display:none;
 }
+.welcome a{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    
+    font-size: 30px;
+}
+
 .profile-pic
 {
     width: 140px;
     border-radius: 50%;
     margin-top: -70px; 
+    margin-bottom:10px;
     /* margin-left:30%; */
     
 }

@@ -28,15 +28,16 @@
     
 
 // }
-function loadprofile()
+function profile()
 {
+  
     tabs.forEach(tab => {
         tabContents.forEach(tabContent => {
         tabContent.classList.remove('active')
         })
       })
       
-        document.getElementById("welcome").classList.add('active')
+      document.getElementById("profile").classList.add('active')
 }
 
 
