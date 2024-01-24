@@ -14,18 +14,27 @@
 {
     width:100%;
     height:100vh;
-
+    background-image: url("purple1.jpeg");
+    background-size: cover;
 }
 .moneyScreen
 {
+    
     position:relative;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     width:340px;
     text-align: center;
-    padding-bottom:350px
+    /* padding-bottom:250px */
 
+}
+.moneyScreen p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color:white;
+    
+    
 }
 .moneyForm
 {
@@ -33,6 +42,7 @@
     box-sizing: border-box;
     padding:60px 30px;
     transition: 0.5s;
+    color:white;
 }
 .moneyForm:hover{
     background: rgba(220, 100, 241, 0.169);
@@ -46,6 +56,7 @@
     font-weight: bold;
     padding-bottom:30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
 }
 .moneyForm input{
     display: block;
@@ -59,6 +70,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     border:none;
+    color:white;
 }
 .moneyForm a{
     display: block;
@@ -73,6 +85,7 @@
     text-transform: uppercase;
     border:none;
     background: rgba(105, 11, 89, 0.868)
+    
 }
 .moneyForm a:hover{
     background: rgba(127, 13, 108, 0.868)

@@ -1,6 +1,6 @@
 .pcParts
 {
-    background-image: url("purple.jpeg");
+    background-image: url("purple2.jpeg");
     background-size: cover;
     width:100%;
     min-height: 100vh;
@@ -21,6 +21,9 @@
     align-items: center;
     align-items: center;
     padding-left:300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+
     
     
 }
@@ -32,4 +35,7 @@
 
     display: inline-grid;
     grid-template-columns: 200px 200px 200px 200px;
+    font-weight: bold;
+    color:white;
+
   }
