@@ -19,6 +19,9 @@
     justify-content: center;
 
 } */
+.Video{
+    max-width: 100%;
+}
 body{
     background-color: #9a5bed;
 }
@@ -57,6 +60,7 @@ body{
     border-left: 2px solid #cfffb0 ;
     left:0;
     animation: typing 3s steps(10) infinite;
+    
 }
 
 @keyframes typing
@@ -105,16 +109,18 @@ body{
     font-size: 2rem;
     font-weight:bold;
     margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .vidText .infoP{
-    font-size : 10px;
+    font-size : 15px;
     font-weight:100;
     color: white;
     /* line-height: 5rem; */
     margin-top:5px;
     margin-bottom: 5px;
     white-space:nowrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     
 
@@ -122,7 +128,7 @@ body{
 
 .infoImg{
     padding-top:100px;
-    padding-left: 700px;
+    padding-left: 850px;
     width: 100%;
     height: 100vh;
 }
@@ -139,7 +145,7 @@ body{
     color: white;
     font-size: 34px;
     font-weight: 600;
-    min-width: 280;
+    width: 100%;
     flex-direction: column;
     position: absolute;
     top: 40%;
@@ -147,6 +153,9 @@ body{
     transform: translate(-50%, -50%);
     margin-top: -80px;
     margin-left: -620px;
+    padding-left: 520px;
+    padding-top: 50px;
+    
     
     
 }
@@ -163,6 +172,7 @@ body{
     /* transition: background 0.5s; */
     max-width: 190px;
     margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .btn:hover{
     background: rgb(211, 208, 208);
